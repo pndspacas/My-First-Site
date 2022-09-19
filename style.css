@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 1500px;
+  margin: 0 auto;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerImages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.topText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.navigation {
+  display: flex;
+  gap: 50px;
+}
+
+.dropDownBtn {
+  font-size: 20px;
+  border: none;
+}
+
+.dropDownContent {
+  display: none;
+  min-width: 100px;
+}
+
+.dropDownContent a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.dropDownContent a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.dropDown:hover .dropDownContent {
+  display: flex;
+}
+
+.dropDown {
+  display: flex;
+  flex-direction: column;
+}
+
+.episodes {
+  border: none;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.episodes:hover {
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  font-size: 25px;
+  padding-bottom: 25px;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topText > h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.topText > p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.logo {
+  height: 3000px;
+  padding: 15px;
+}
+
+.bleach {
+  height: 220px;
+}
+
+.piece {
+  height: 170px;
+}
+
+.naruto {
+  height: 120px;
+}
+
+.fairy {
+  height: 150px;
+}
+
+.bleachImg,
+.narutoImg,
+.fairyImg,
+.pieceImg {
+  height: 550px;
+  width: 800px;
+}
+
+.bleachSection,
+.narutoSection,
+.fairySection,
+.pieceSection {
+  display: flex;
+  flex-wrap: no-wrap;
+  width: 1500px;
+  margin: 0 auto;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bleachText,
+.narutoText,
+.fairyText,
+.pieceText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  width: 500px;
+}
+
+.bleachText > p {
+  font-size: 18px;
+  padding: 0 50px 0 50px;
+  line-height: 2;
+  letter-spacing: 3px;
+}
+
+.bleachText > h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.narutoText > p {
+  font-size: 18px;
+  padding: 0 50px 0 50px;
+  line-height: 2;
+  letter-spacing: 3px;
+}
+
+.narutoText > h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#naruto,
+#fairy,
+#piece,
+#bleach {
+  margin-top: 50px;
+}
+
+.fairyText > p {
+  font-size: 20px;
+  padding: 0 50px 0 50px;
+  line-height: 2;
+  letter-spacing: 3px;
+}
+
+.fairyText > h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.pieceText > p {
+  font-size: 20px;
+  padding: 0 50px 0 50px;
+  line-height: 2;
+  letter-spacing: 3px;
+}
+
+.pieceText > h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.pieceSection {
+  padding-bottom: 50px;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, #000000 0%, #000000 99%);
+}
+
+.fa-solid {
+  color: black;
+  text-decoration: none;
+}
+
+#none {
+  height: 0;
+  width: 0;
+}
+
+.all {
+  height: 550px;
+}
+
+.animesNav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.animesNav > li > a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.animesNav > li:hover {
+  border-bottom: 1px solid black;
+}
+
+.bleach:hover,
+.naruto:hover,
+.fairy:hover,
+.piece:hover {
+  margin-bottom: 25px;
+}
+
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.episodeListContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.episodeImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.episodeImageContainer > p {
+  padding-top: 5px;
+}
+
+.episodeImages {
+  border-radius: 15px;
+  height: 150px;
+  width: 230px;
+}
+
+.videosContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
